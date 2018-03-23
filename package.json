@@ -15,7 +15,7 @@
     "url": "git+https://github.com/shenxdtw/material-ui-arrowy-pagination"
   },
   "main": "dist/index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "prepublish": "better-npm-run build",
     "build": "better-npm-run build",

@@ -7,6 +7,7 @@ An easy to use and customizable pagination component for [Material-UI](https://m
 This component require `material-ui` version >= v1.0.0
 
 FYI
+
 [material-ui@next](https://material-ui-next.com/)
 
 ### Quick Start
@@ -28,7 +29,7 @@ Option               | Description
 `display`            | Number of pages you want to show in the panel
 `current`            | Current page selected
 `onChange`           | Handles the change event of selected page: `function(pageNumber: integer, previousPageNumber: integer) => void`
-`styleRoot`          | Styles for root element
+`style`          | Styles for root element
 `styleFirstPageButton` | Styles for `FirstPageButton`. If not provided, a custom `IconButton` from `Material UI` will be rendered as default, otherwise `<div>` with styles will show up instead
 `stylePreviousPageButton` | Styles for `PreviousPageButton`. If not provided, a custom `IconButton` from `Material UI` will be rendered as default, otherwise `<div>` with styles will show up instead
 `styleNextPageButton` | Styles for `NextPageButton`. If not provided, a custom `IconButton` from `Material UI` will be rendered as default, otherwise `<div>` with styles will show up instead

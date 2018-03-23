@@ -252,7 +252,10 @@ class Pagination extends React.Component {
     }
 
     return (
-      <div style={this.props.styleRoot}>
+      <div 
+        className={this.props.className}
+        style={{...this.props.styleRoot, ...this.props.style}}
+      >
         {
           (this.props.showFirstPageButton) &&
           <FirstPageButton
@@ -315,6 +318,8 @@ Pagination.propTypes = {
   display: PropTypes.number,
   onChange: PropTypes.func.isRequired,
 
+  className: PropTypes.string,
+  style: PropTypes.object,
   styleRoot: PropTypes.object,
   styleFirstPageButton: PropTypes.object,
   stylePreviousPageButton: PropTypes.object,

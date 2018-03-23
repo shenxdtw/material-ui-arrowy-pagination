@@ -1,6 +1,13 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
+import { withStyles } from 'material-ui/styles';
 import Component from '../dist/index';
+
+const styles = theme => ({
+  component: {
+    marginTop: '30px',
+  }
+});
 
 class App extends React.Component {
   constructor(props) {
@@ -29,6 +36,8 @@ class App extends React.Component {
   }
 
   render() {
+    const { classes } = this.props;
+
     return (
       <div
         style={{
@@ -59,6 +68,7 @@ class App extends React.Component {
           label='How Many Pages Do You Want to Display?'
         /><br />
         <Component
+          className={classes.component}
           total={this.state.total}
           current={this.state.selectedPageNumber}
           display={this.state.display}
@@ -73,7 +83,7 @@ class App extends React.Component {
           current={this.state.selectedPageNumber}
           display={this.state.display}
           onChange={(pageNumber, previouspageNumber) => this.setState({selectedPageNumber: pageNumber})}
-          styleRoot={{marginTop: '30px'}}
+          style={{marginTop: '30px'}}
           styleButton = {
             {
               color: '#00bac7',
@@ -102,4 +112,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withStyles(styles)(App);
