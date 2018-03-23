@@ -1,0 +1,71 @@
+{
+  "name": "material-ui-arrowy-pagination",
+  "description": "An easy to use and customizable pagination component for material ui.",
+  "author": "ShenXD <fate11250@gmail.com>",
+  "homepage": "https://github.com/shenxdtw/material-ui-arrowy-pagination/blob/master/README.md",
+  "keywords": [
+    "material-ui",
+    "material-ui-next",
+    "material-ui@next",
+    "material-ui-v1.0.0",
+    "pagination"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenxdtw/material-ui-arrowy-pagination"
+  },
+  "main": "dist/index.js",
+  "version": "1.0.0",
+  "scripts": {
+    "prepublish": "better-npm-run build",
+    "build": "better-npm-run build",
+    "webpack-package": "node_modules/webpack/bin/webpack.js--progress --colors --watch --config webpack.config.js",
+    "dev-server": "node example/hotLoader.js",
+    "lint": "./node_modules/eslint/bin/eslint.js . --ext .jsx --ext js -c .eslintrc.js --ignore-path .eslintignore --fix",
+    "test": "jest"
+  },
+  "betterScripts": {
+    "build": "webpack --progress --colors  --config webpack.config.js"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.9"
+  },
+  "peerDependencies": {
+    "material-ui": "^1.0.0-beta.38",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-jest": "^18.0.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "better-npm-run": "^0.1.0",
+    "enzyme": "^2.7.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
+    "express": "^4.14.0",
+    "jest": "^18.1.0",
+    "jsdom": "^9.9.1",
+    "json-loader": "^0.5.4",
+    "material-ui": "^1.0.0-beta.38",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.4.1",
+    "react-dom": "^15.5.4",
+    "react-hot-loader": "3.0.0-beta.6",
+    "react-tap-event-plugin": "^2.0.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.14.0"
+  }
+}
